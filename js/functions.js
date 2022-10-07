@@ -12,9 +12,6 @@ function sayHello(name) {
     return "hello " + name;
 }
 
-let name = prompt("What's your name?")
-console.log(sayHello(name))
-
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -22,6 +19,7 @@ console.log(sayHello(name))
  *
  * console.log 'helloMessage' to check your work
  */
+
 let helloMessage = sayHello("Danielle");
 console.log(helloMessage)
 
@@ -32,8 +30,8 @@ console.log(helloMessage)
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-let myName = "Danielle"
-console.log(sayHello(myName))
+let myName = "Danielle";
+console.log(sayHello(myName));
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -58,7 +56,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 function isTwo(x){
-    return (x == 2)
+    return (x === 2)
 }
 console.log(isTwo(random))
 
