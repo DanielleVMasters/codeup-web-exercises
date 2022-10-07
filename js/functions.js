@@ -1,5 +1,5 @@
 "use strict";
-
+(function () {
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -104,3 +104,4 @@ alert("this would be the tip amount " + calculateTip(tip, bill))
 function applyDiscount(price, discount) {
     return price - (discount * price)
 }
+} ) ()
