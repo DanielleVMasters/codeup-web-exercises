@@ -103,27 +103,25 @@ switch(analyzeColor) {
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-
+var luckyNumber = Math.floor(Math.random() * 6);
 
 let totalPrice = prompt("What is your total amount?")
 
-function discount() {
+function calculateTotal() {
     if (luckyNumber === 1) {
-        return 0.10;
+        return calculateTotal = totalPrice * 0.10;
     } else if (luckyNumber === 2) {
-        return 0.25;
+        return calculateTotal = totalPrice * 0.25;
     } else if (luckyNumber === 3) {
-        return 0.35;
+        return calculateTotal = totalPrice * 0.35;
     } else if (luckyNumber === 4) {
-        return 0.50;
+        return calculateTotal = totalPrice * 0.50;
     } else if (luckyNumber === 5) {
-        return 0.00;
+        return calculateTotal = totalPrice * 0.00;
     } else {
-        return "no discount applies for lucky number: " + luckyNumber;
+        return "no discount applies for that lucky number";
     }
 }
-let calculateTotal = parseFloat(totalPrice) * parseFloat(discount)
-
 
 /**
  * TODO:
@@ -134,9 +132,9 @@ let calculateTotal = parseFloat(totalPrice) * parseFloat(discount)
  * price before the discount was, and what their price after the discount is.
  */
 //Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
 
-alert ("your lucky number is " + luckyNumber + " that makes your discount " + calculateTotal)
+
+alert ("your lucky number is " + luckyNumber + " that makes your discount " + calculateTotal())
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -157,10 +155,9 @@ alert ("your lucky number is " + luckyNumber + " that makes your discount " + ca
  */
 
 let userconfirm = confirm("would you like to enter a number?");
-let usernumber = ("Enter your number")
+let usernumber = prompt("Enter your number")
 
-if (userconfirm === true){
-    prompt (usernumber)
+if (userconfirm === true)
     {
         if (usernumber % 2 === 0) {
             alert("The number is even.");
@@ -177,7 +174,6 @@ if (userconfirm === true){
         } else {
             alert("NaN")
         }
-    }
 } else {
     alert ("Thank you for your time")
 }
