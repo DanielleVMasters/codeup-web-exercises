@@ -117,7 +117,7 @@ function calculateTotal() {
     } else if (luckyNumber === 4) {
         return calculateTotal = totalPrice * 0.50;
     } else if (luckyNumber === 5) {
-        return calculateTotal = totalPrice * 0.00;
+        return calculateTotal = totalPrice * 0;
     } else {
         return "no discount applies for that lucky number";
     }
