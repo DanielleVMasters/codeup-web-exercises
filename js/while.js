@@ -7,12 +7,24 @@ while (i <= 65536) {
     i += i;
 }
 
+
+
 let allCones = Math.floor(Math.random() * 50) + 50; //start point
-let x = Math.floor(Math.random() * 5) + 1;
-let cl = allCones - x
+
 do {
-    console.log(x + " cones sold.");
-    console.log("Cannot sell you " + x + " I only have " + cl);
-    console.log("Yay! I sold them all");//output
-    cl--;//up by
-} while (allCones < x);//how many
+    let x = Math.floor(Math.random() * 5) + 1;
+
+    allCones -= x
+
+    if((allCones - x) < 0){
+        console.log("Cannot sell you " + x + " cones I only have " + allCones + " ...");
+    }else{
+        console.log("Cones available " + allCones)
+        allCones -= x;
+        console.log(x + " cones sold...");
+    }
+
+
+} while (allCones > 0);
+
+console.log("All cones sold! Yay we're done!")
