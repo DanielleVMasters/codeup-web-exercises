@@ -58,9 +58,20 @@ console.log(names)
 
     let num = [1, 2, 3, 4, 5]
 
+    function first() {
+        console.log(num[0]);
+    }
 
-    console.log(num[0])
-    console.log(num[1])
-    console.log(num[4])
+    function second() {
+        console.log(num[1]);
+    }
+
+    function last() {
+        console.log(num[4]);
+    }
+
+    first();
+    second();
+    last();
 
 })();
