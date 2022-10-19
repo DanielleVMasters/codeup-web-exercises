@@ -77,7 +77,51 @@ console.log(person.sayHello())
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+let books = [
+        {
+            title: "Percy Jackson and the Olympians",
+            author: {
+                firstName: "Rick",
+                lastName: "Riordan",
+            }
 
+        },
+        {
+            title: "Interview with a Vampire",
+            author: {
+                firstName: "Anne",
+                lastName: "Rice",
+            }
+
+        },
+        {
+            title: "Cirque Du Freak",
+            author: {
+                firstName: "Darren",
+                lastName: "Shan",
+            }
+
+        },
+        {
+            title: "The Chronicles of Vladimir Tod",
+            author: {
+                firstName: "Heather/Zac",
+                lastName: "Brewer",
+            }
+
+        },
+        {
+            title: "The Way of Shadows",
+            author: {
+                firstName: "Brent",
+                lastName: "Weeks",
+            }
+
+        }
+    ]
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -102,6 +146,10 @@ console.log(person.sayHello())
      *      ---
      *      ...
      */
+
+    books.forEach(function(book){
+            console.log(book)
+    })
 
     /**
      * Bonus:
