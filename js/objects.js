@@ -53,17 +53,17 @@ console.log(person.sayHello())
         {name: 'George', amount: 320}
     ];
 
+    shoppers.forEach(function(shopper){
+        console.log("shopper: " + shopper.name);
+        console.log("Amount before discount: " + shopper.amount);
 
-    function HEBOffer(x){
-        if(x > 200){
-            return x * .12
-        } else{
-            return "Offer can not be applied"
+        if(shopper.amount > 200) {
+            console.log("you get 12% discount")
+            shopper.amount = shopper.amount - (shopper.amount * .12)
+            console.log("Amount after discount: " + shopper.amount)
         }
-    }
-    console.log(HEBOffer(shoppers[0].amount))
-    console.log(HEBOffer(shoppers[1].amount))
-    console.log(HEBOffer(shoppers[2].amount))
+    })
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -148,7 +148,9 @@ let books = [
      */
 
     books.forEach(function(book){
-            console.log(book)
+            console.log("book #" + (book.indexOf(book) + 1))
+        console.log("Title: " + book.title)
+        console.log("Author: " + book.author.firstName + book.author.lastName)
     })
 
     /**
