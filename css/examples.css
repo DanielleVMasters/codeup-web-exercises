@@ -1,0 +1,40 @@
+/*em:*/
+/*Unit = Font size of the element being styled x Specified value of the element being styled*/
+
+html {
+    font-size: 18px;
+}
+
+section {
+    font-size: 14px;
+    padding: 3em;
+}
+
+html {
+    font-size: 18px;
+}
+
+section {
+    font-size: 14px;
+    padding-bottom: 42px;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 42px;
+}
+
+/*rem:*/
+/*Unit = Font size of the root html element x Specified value of the element being styled*/
+
+html {
+    font-size: 18px;
+    margin: 2rem;
+}
+
+html {
+    font-size: 18px;
+    margin-bottom: 36px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: 36px;
+}
+
