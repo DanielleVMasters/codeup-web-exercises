@@ -1,4 +1,27 @@
 .fancy-header {
-    color: purple; /* single line comment */
+    color: hotpink;
     text-decoration: underline;
+    font-family: "Brush Script MT";
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+h1 { text-align: center }
+
+body {
+    background-image: url("../pictures/1200px-518097-background-hd.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h3 {
+    color: aqua;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+body {
+    color: white;
+    font-family: "Comic Sans MS";
 }
