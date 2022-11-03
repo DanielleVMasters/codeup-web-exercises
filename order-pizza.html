@@ -41,7 +41,77 @@
 </nav>
 <div class="container">
     <div class="jumbotron d-flex justify-content-center align-items-center">
-        <div class="bg-light p-2 text-dark bg-opacity-75 flex-fill">This is 25% opacity success background</div>
+        <div class="bg-light p-2 text-dark bg-opacity-75 flex-fill text-center fs-2 fw-bold">Welcome to Pizza World!</div>
+    </div>
+    <h2>Build your own pizza!</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item" for="size-and-crust">
+            <a class="nav-link active" aria-current="page"  href="#">
+                <span class="badge rounded-pill bg-secondary">1</span>
+                Size and Crust</a>
+        </li>
+        <li class="nav-item" for="cheese-and-sauce">
+            <a class="nav-link" href="#">
+                <span class="badge rounded-pill bg-secondary">2</span>
+                Cheese and Sauce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span class="badge rounded-pill bg-secondary">3</span>
+                Toppings</a>
+        </li>
+    </ul>
+    <div class="card" for="size-and-crust">
+        <div class="card-header card text-white bg-primary mb-3">
+            Choose Size and Crust
+        </div>
+        <div class="card-body">
+            <div class="card">
+                <div class="card-header">
+                    Hand Tossed
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
+                    <li class="list-group-item">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Small (10")
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Medium (12")
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header">
+                    Crispy Thin
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio</li>
+                    <li class="list-group-item">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Medium (12")
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            Large (14")
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-footer d-flex text-muted justify-content-end">
+        <a href="#" class=" btn btn-primary ">Next Step ></a>
+        </div>
+    </div>
     </div>
 </div>
 
