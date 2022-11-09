@@ -77,6 +77,5 @@ function getAverageHeight(array){
         }
     })
     return height / array.length;
-
 }
 console.log(getAverageHeight(hamsters))
