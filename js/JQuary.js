@@ -1,4 +1,4 @@
 $(function() {
-    let contentalert = $("#lyrics").html();
+    let contentalert = $("#title").html();
     alert(contentalert)
 });
