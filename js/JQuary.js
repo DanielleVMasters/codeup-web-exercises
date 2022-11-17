@@ -1,4 +1,5 @@
 $(function() {
-    let contentalert = $("#title").html();
-    alert(contentalert)
+    // let contentalert = $("#title").html();
+    // alert(contentalert)
+    $(".codeup").css("border", "1px solid red")
 });
