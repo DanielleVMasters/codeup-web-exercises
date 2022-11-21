@@ -25,7 +25,7 @@ $(function(){
         }
     })
     function activateCheats() {
-        document.body.style.backgroundImage = "url('pictures/MedicalPeacefulGalapagossealion-size_restricted.gif')";
+        $("body").css("background-image", "url('pictures/MedicalPeacefulGalapagossealion-size_restricted.gif')");
         let audio = new Audio('audio/Konami.mp3');
         audio.play();
         $('h1').css("color", "white")
