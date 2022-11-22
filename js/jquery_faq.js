@@ -2,9 +2,7 @@ $(function() {
     $("dd")
         .addClass("invisible")
 
-    $("dt")
-        .click(function(){
-            $(this).css("color","blue")
-            $("dd").toggleClass("invisible")
-    });
+    $("#btn-2").click(function(){
+        $("dd").toggleClass("invisible")
+    })
 });
