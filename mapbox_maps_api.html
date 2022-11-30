@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Places to Eat</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Favorite Places to Eat</h1>
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+<!-- Custom JS -->
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script>
+
+
+
+
+
+    mapboxgl.accessToken = MyKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
+
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-98.4916, 29.4260])
+        .addTo(map);
+
+    var LePeeppopup = new mapboxgl.Popup()
+            .setLngLat([-98.495850, 29.625680])
+            .setHTML("<p>Le Peep Cafe</p>")
+            .addTo(map)
+
+    var PurpleGarlicpopup = new mapboxgl.Popup()
+        .setLngLat([-98.452720, 29.485510])
+        .setHTML("<p>Cerroni's Purple Garlic</p>")
+        .addTo(map)
+
+    var Williampopup = new mapboxgl.Popup()
+        .setLngLat([-98.344380, 29.548810])
+        .setHTML("<p>Williams Confectionery Crafts</p>")
+        .addTo(map)
+
+    geocode("San Antonio", MyKey).then(function(results) {
+        console.log(results)
+    })
+
+    reverseGeocode({lat: 32.77, lng: -96.79}, MyKey).then(function(results) {
+        console.log(results)
+    })
+
+</script>
+</body>
+</html>
