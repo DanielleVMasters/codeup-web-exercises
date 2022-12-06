@@ -18,6 +18,10 @@
             }
         }
     });
+
+
+    var row = $('<div class="row row-cols-2"><div class="col"><strong>' + reports[i].dt_txt+ '</strong></div><div class="col">' + reports[i].main.temp_min + "/" + reports[i].main.temp_max + '</div><div class="col">' + reports[i].weather.0.description + '</div><div class="col">' + reports[i].main.humidity + '</div><div class="col">' + reports[i].wind.speed + '</div><div class="col">' + reports[i].main.pressure + '</div></div><br>');
+    $('#weather').append(row);
 </script>
 </body>
 </html>
