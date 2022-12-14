@@ -80,9 +80,48 @@
 // }
 // console.log(getAverageHeight(hamsters))
 
+//
+//
+// for(var i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
 
+// if (true) {
+//     let x = 5;
+// }
+// console.log(typeof x);
+//
+// function sayHello(name) {
+//     return 'Hello, ' + name + '!';
+// }
+// console.log(sayHello())
+//
+// // #1
+// const sayHello1 = (name) => { 'Hello, ' + name + '!' }
+// console.log(sayHello1())
+//
+// // #2
+// const sayHello2 = name => { 'Hello, ' + name + '!' }
+// console.log(sayHello2())
+// // #3
+// const sayHello3 = (name) => `Hello, ${name}!`
+// console.log(sayHello3())
+//
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.map(n => n * 3)
+//
+// console.log(numbers)
 
-for(var i = 0; i <= 10; i++) {
-    console.log(i);
-}
+const isDivisibleBy3 = n => n % 3 === 0;
 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(numbers.filter(isDivisibleBy3));
+console.log(numbers);
+
+const p = new Promise((resolve, reject) => {
+    reject(3)
+});
+
+p.then(result => console.log(result));
+p.catch(error => console.log('An error occured!'));

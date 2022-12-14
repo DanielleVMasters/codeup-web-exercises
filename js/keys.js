@@ -1,2 +1,2 @@
 const MyKey = "pk.eyJ1IjoiZGFuaWVsbGV2bWFzdGVycyIsImEiOiJjbGIycHduM2gwNnVnM3VvMGo1ODVnYWd6In0.lCq9jd-YMoR4Ueedlj2TIA"
-const GitHubKey = "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"
+const GitHubKey = "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"

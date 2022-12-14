@@ -5,6 +5,7 @@ const LastCommit = (username) => {
         .then(events => {
             let Etypes = events.map(event => event.type)
             let recent = Etypes.indexOf("PushEvent")
+            console.log(Etypes)
             console.log(events[recent].created_at)
         })
 }
